@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <!-- custom booostrap file link  -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    /> -->
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="background-blue"></div>
+
+    <!--.......................... header start........................ -->
+    <div class="background-header">
+      <div class="container">
+        <div class="header">
+          <div class="header-menu">
+            <a href="#"> <div class="name">&lt;VanQuy/&gt;</div></a>
+            <div class="menu">
+              <ul class="menu-link">
+                <li><span>01. </span><a href="#">Home</a></li>
+                <li><span>02. </span><a href="#about">About</a></li>
+                <li><span>03. </span><a href="#skills">Skills</a></li>
+                <li><span>04. </span><a href="#Portfolio">Portfolio</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="header-content">
+            <div class="left">
+              <div class="title">I'm A Web</div>
+              <div class="title">Developer</div>
+              <div class="description">
+                I Love Building Beautiful Web Experience
+              </div>
+              <div class="button">
+                <a href="#about"><button>About Me</button></a>
+                <a href="#Portfolio"><button>Portfolio</button></a>
+              </div>
+              <div class="social">
+                <div>
+                  <a target="_blank" href="https://twitter.com/PhamVanQuyPY"
+                    ><i class="fa-brands fa-square-twitter"></i
+                  ></a>
+                </div>
+                <div>
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/pham-van-quy-41065b277/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </div>
+                <div>
+                  <a href="#"><i class="fa-solid fa-house-user"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="right">
+              <img src="./images/avatar.jpg" alt="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--.......................... header end........................ -->
+
+    <!--.......................... about start........................ -->
+    <div class="container">
+      <div id="about" class="about">
+        <div class="title">About Me</div>
+        <div class="content">
+          <div class="left">
+            <h2>Get To Know Me!</h2>
+            <div class="decscription">
+              My name is Pham Van Quy. I started learning how to code in January
+              2021 and spent most of my day experimenting with HTML, CSS and
+              JavaScript, React. I enjoy coding and the challenge of learning
+              something new everyday. My goal is to pursue a career in the field
+              of web development.
+            </div>
+          </div>
+          <div class="right">
+            <h2>Education</h2>
+            <div class="decscription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis, sequi sunt? Quam fugit nemo mollitia eius excepturi
+              natus illo magnam.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--.......................... about end........................ -->
+
+      <!--.......................... skills start........................ -->
+
+      <div id="skills" class="Skills">
+        <h1 class="title">Skills</h1>
+
+        <div class="list-item">
+          <div class="item">
+            <div class=""><i class="fa-brands fa-html5"></i></div>
+            <p>HTML</p>
+          </div>
+          <div class="item">
+            <div class=""><i class="fa-brands fa-css3-alt"></i></div>
+            <p>CSS</p>
+          </div>
+          <div class="item">
+            <div class=""><i class="fa-brands fa-js"></i></div>
+            <p>JavaScript</p>
+          </div>
+          <div class="item">
+            <div class=""><i class="fa-brands fa-react"></i></div>
+            <p>ReactJS</p>
+          </div>
+          <div class="item">
+            <div class=""><i class="fa-brands fa-php"></i></div>
+            <p>PHP</p>
+          </div>
+          <div class="item">
+            <div class=""><i class="fa-brands fa-git-alt"></i></div>
+            <p>Git</p>
+          </div>
+          <div class="item">
+            <div class=""><i class="fa-brands fa-bootstrap"></i></div>
+            <p>Boostrap</p>
+          </div>
+        </div>
+      </div>
+
+      <!--.......................... skill end........................ -->
+
+      <!--.......................... Portfolio start........................ -->
+
+      <div id="Portfolio" class="Portfolio">
+        <h1 class="title">Portfolio</h1>
+        <div class="content">
+          <div class="left">
+            <video autoplay loop muted width="500" height="400">
+              <source src="./video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="right">
+            <h2>E-COMMERCE</h2>
+            <div class="description">
+              Đây là một website bán hàng mà tôi đã xây dựng dựa trên database
+              có sẵn.Sử dụng React JS,một số tính năng như sử dụng axios để kết
+              nối database, hỗ trợ chức năng Filter,DarkMode, đăng nhập, đăng kí
+              user. Dùng React-hook-form để quản lí form. Gồm trang sản phẩm,
+              chi tiết sản phẩm, Giỏ hàng. Có Sử dụng Redux-toolkit để quản lí
+              state.
+            </div>
+            <ul>
+              <li>REACT</li>
+              <li>MUI</li>
+              <li>Auth</li>
+            </ul>
+
+            <div class="button">
+              <a href="https://r-my-project-react-ts.vercel.app" target="_blank"
+                ><button>Live</button></a
+              >
+            </div>
+            <div class="button">
+              <a
+                href="https://github.com/quypvpy/RMyProject-React-TS
+              "
+                target="_blank"
+                ><button>Source</button></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="content">
+          <div class="left">
+            <h2>Travel Blog</h2>
+            <div class="description">
+              là wwebsite tôi tự làm. Được xây dựng trên HTML, CSS, JavaScript,
+              Boostrap. Sử dụng database được xây dựng sẵn, để hiển thị nội
+              dung. Cho phép thêm, sửa, xóa ,lọc dữ liệu.
+            </div>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Boostrap</li>
+              <li>Axios</li>
+            </ul>
+
+            <div class="button">
+              <a
+                href="https://project-js-rosy.vercel.app/?_page=1&_limit=6"
+                target="_blank"
+                ><button>Live</button></a
+              >
+            </div>
+            <div class="button">
+              <a href="https://github.com/quypvpy/project-js" target="_blank"
+                ><button>Source</button></a
+              >
+            </div>
+          </div>
+
+          <div class="right">
+            <img src="./images/image1.png" alt="image" />
+          </div>
+        </div>
+      </div>
+
+      <!--.......................... Portfolio end........................ -->
+    </div>
+
+    <script type="module" src="/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

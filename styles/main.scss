@@ -1,0 +1,327 @@
+// ..............................Variables ...............................................
+
+@import "./mixins.scss";
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;0,800;0,1000;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Romanesco&family=Squada+One&display=swap");
+
+$primary-color: #001c30;
+$secondary-color: #b8b8b8;
+$third-color: #7db9b6;
+$background: #e9ffc2;
+$button-color: #c69749;
+$pink-color: #b05d5d;
+
+$primary-font: "Poppins", sans-serif;
+
+$wrapper: 1880px;
+$container: 1170px;
+
+// ..............................structures ...............................................
+
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: $primary-color !important;
+}
+p {
+  display: inline-block;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul {
+  padding: unset;
+}
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $primary-font;
+  line-height: 1;
+  color: $primary-color;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block !important;
+}
+
+.wrapper {
+  max-width: $wrapper;
+  margin: 0 auto;
+}
+.container {
+  max-width: $container + 30px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+// ..............................header start ...............................................
+.background-blue {
+  height: 1rem;
+  background-color: #06bfe2;
+}
+.tes12 {
+  background-color: #ffbb49;
+}
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & li {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+  & li span {
+    color: $button-color;
+    font-size: 2rem;
+  }
+
+  & .name {
+    width: 30%;
+    font-size: 2rem;
+    color: $button-color;
+  }
+}
+
+.header-menu .menu {
+  width: 70%;
+
+  &-link {
+    list-style-type: none;
+    display: flex;
+  }
+  &-link li {
+    margin-right: 2rem;
+    cursor: pointer;
+  }
+}
+.background-header {
+  background-color: $background;
+}
+.header-content {
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4rem;
+
+  & > div {
+    width: 50%;
+  }
+
+  & .left .title {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: 0.4rem;
+  }
+  & .left .description {
+    color: $third-color;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    letter-spacing: 2.2px;
+  }
+  & .left .button button {
+    background-color: $button-color;
+    margin-right: 2rem;
+    margin-top: 1.7rem;
+  }
+  & .left .social {
+    display: flex;
+    margin: 5rem 0;
+  }
+  & .left .social i {
+    font-size: 3rem;
+    margin-right: 5rem;
+  }
+  & .right {
+    width: 45rem;
+    height: 50rem;
+    margin-bottom: 10rem;
+    position: relative;
+  }
+  & .right::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    border: 5px solid $button-color;
+    border-radius: 2rem;
+  }
+  & .right img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 2rem;
+    z-index: 1;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .header-content .right {
+    width: 40rem;
+    height: 45rem;
+  }
+  .header-content .left .title {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .header-content .right {
+    width: 30rem;
+    height: 40rem;
+  }
+  .header-content .left .title {
+    font-size: 4rem;
+  }
+  .header-content .left .description {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header-menu {
+    display: none;
+  }
+  .header-content {
+    margin: 0;
+
+    & .left .title {
+      padding-top: 2rem;
+    }
+  }
+  .header-content {
+    display: block;
+  }
+  .header-content > div {
+    width: 100%;
+  }
+}
+// ..............................header end ...............................................
+
+// ..............................about start ...............................................
+.about {
+  margin: 10rem 0;
+
+  & .content {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 8rem;
+  }
+  & .content > div {
+    width: 50%;
+  }
+  & .content .decscription {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  & .title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  & h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .about .content {
+    display: block;
+  }
+  .about .content > div {
+    width: 100%;
+  }
+}
+
+// ..............................about end ...............................................
+
+// ..............................skills start ...............................................
+.Skills .title {
+  text-align: center;
+}
+.list-item {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+
+  & .item {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+  }
+  & i {
+    font-size: 4rem;
+  }
+  & p {
+    font-size: 2rem;
+  }
+}
+
+.Portfolio {
+  margin-bottom: 20rem;
+  & .title {
+    text-align: center;
+  }
+  & .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+  }
+  & .description {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  & li {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    margin-left: 1.5rem;
+  }
+  & .button button {
+    width: 90%;
+    background-color: $button-color;
+    margin-bottom: 1rem;
+    scale: 1;
+    transition: all 0.2s linear;
+  }
+  & .button button:hover {
+    scale: 1.1;
+  }
+}
+.line {
+  margin: 5rem 0;
+  border: 1px dashed $primary-color;
+}
+
+@media screen and (max-width: 1279px) {
+  .Portfolio .content {
+    display: block;
+
+    & .left {
+      margin-bottom: 7rem;
+    }
+  }
+  .Portfolio .content video {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ..............................skills start ...............................................

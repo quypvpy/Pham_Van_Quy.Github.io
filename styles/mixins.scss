@@ -1,0 +1,21 @@
+//  background color
+@mixin button(
+  $width: 3rem,
+  $height: 3rem,
+  $color: "white",
+  $background: "white"
+) {
+  width: $width;
+  height: $height;
+  color: $color;
+  text-transform: uppercase;
+  background-color: $background;
+  cursor: pointer;
+  font-weight: 700;
+}
+// flexx
+@mixin flexbox($align-items: stretch, $justify-content: space-between) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
